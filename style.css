@@ -1,0 +1,228 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f7f6f2; /* Fond légèrement cassé comme sur l'image */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Section Hero (Haut de page) */
+.hero-section {
+    position: relative;
+    width: 100%;
+    max-width: 480px; /* Calibré pour un affichage mobile optimal */
+    height: 45vh;
+    /* Image de fond générique de salle de sport, tu pourras la remplacer */
+    background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Overlay pour assombrir le fond et faire ressortir le texte */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Assombrissement */
+    backdrop-filter: blur(2px); /* Léger flou artistique */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    color: #fff;
+}
+
+/* Badge du haut */
+.badge {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.main-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+/* Boutons d'action principaux (Style Or/Marron comme Chez Bassou) */
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #b38e50; /* Couleur dorée/marron premium */
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #9c7a40;
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Conteneur des Cartes (Ajusté pour s'empiler proprement) */
+.info-container {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+    margin-top: -20px; /* Fait remonter les cartes sur l'image */
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Style des cartes blanches */
+.info-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    position: relative;
+}
+
+/* Icônes dans les cartes */
+.card-icon {
+    font-size: 1.4rem;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-phone { color: #2e5a36; }      /* Vert foncé */
+.icon-location { color: #d9534f; }   /* Rouge épingle */
+.icon-social { color: #333; }
+
+.card-details h3 {
+    font-size: 0.95rem;
+    color: #2e5a36; /* Titre vert comme sur l'image */
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.card-details p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.card-link {
+    font-size: 1.1rem;
+    color: #004b93;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.action-link {
+    font-size: 0.9rem;
+    color: #b38e50;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+/* Réseaux et Badge WhatsApp spécifique */
+.social-card {
+    justify-content: space-between;
+}
+
+.handle {
+    font-size: 0.85rem !important;
+    color: #888 !important;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.social-links a {
+    font-size: 0.9rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.social-links a.disabled {
+    color: #ccc;
+    pointer-events: none;
+}
+
+.whatsapp-badge {
+    background-color: #128c7e;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(18, 140, 126, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-badge:hover {
+    transform: scale(1.05);
+}
