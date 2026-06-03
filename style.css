@@ -1,0 +1,37 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#111;
+    color:white;
+    text-align:center;
+}
+
+header{
+    background:gold;
+    color:black;
+    padding:30px;
+}
+
+.hero{
+    padding:40px 20px;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:12px 25px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.info{
+    padding:20px;
+}
+
+footer{
+    background:#222;
+    padding:20px;
+}
