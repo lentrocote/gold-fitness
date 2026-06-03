@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Fitness Martil - Bienvenue</title>
+    <!-- FontAwesome pour des icônes propres -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Section Header avec image de fond -->
+    <header class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Gold Fitness Premium</span>
+            <h1 class="main-title">Gold Fitness</h1>
+            <p class="subtitle">Salle de gym à Martil</p>
+            
+            <!-- Boutons d'action principaux -->
+            <div class="cta-buttons">
+                <a href="tel:0661868677" class="btn btn-primary">
+                    <i class="fa-solid fa-phone"></i> Appeler
+                </a>
+                <a href="#about" class="btn btn-secondary" id="scroll-to-info">
+                    <i class="fa-solid fa-dumbbell"></i> Voir la salle
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section des informations (Cartes blanches arrondies) -->
+    <main class="info-container" id="about">
+        
+        <!-- Carte Téléphone -->
+        <div class="info-card">
+            <div class="card-icon icon-phone">
+                <i class="fa-solid fa-phone-flip"></i>
+            </div>
+            <div class="card-details">
+                <h3>Téléphone</h3>
+                <a href="tel:0661868677" class="card-link">+212 6 61 86 86 77</a>
+            </div>
+        </div>
+
+        <!-- Carte Localisation -->
+        <div class="info-card">
+            <div class="card-icon icon-location">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="card-details">
+                <h3>Localisation</h3>
+                <p>JPF5+PP4, Martil</p>
+                <!-- Lien Google Maps basé sur le code Plus JPF5+PP4 Martil -->
+                <a href="https://maps.google.com/?q=Gold+Fitness+Martil" target="_blank" class="action-link">Ouvrir la localisation</a>
+            </div>
+        </div>
+
+        <!-- Carte Réseaux Sociaux -->
+        <div class="info-card social-card">
+            <div class="card-icon icon-social">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="card-details">
+                <h3>Réseaux sociaux</h3>
+                <p class="handle">@gooldffitness</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/gooldffitness" target="_blank">Instagram</a>
+                    <a href="#" class="disabled">Facebook</a>
+                </div>
+            </div>
+            <!-- Bouton WhatsApp flottant à droite comme sur le modèle -->
+            <a href="https://wa.me/212661868677" target="_blank" class="whatsapp-badge">WhatsApp</a>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
