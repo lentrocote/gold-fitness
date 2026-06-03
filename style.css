@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f7f6f2; /* Fond légèrement cassé comme sur l'image */
+    background-color: #f7f6f2;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -15,13 +15,12 @@ body {
     min-height: 100vh;
 }
 
-/* Section Hero (Haut de page) */
+/* Section Hero */
 .hero-section {
     position: relative;
     width: 100%;
-    max-width: 480px; /* Calibré pour un affichage mobile optimal */
+    max-width: 480px;
     height: 45vh;
-    /* Image de fond générique de salle de sport, tu pourras la remplacer */
     background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000') center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -30,15 +29,14 @@ body {
     padding: 20px;
 }
 
-/* Overlay pour assombrir le fond et faire ressortir le texte */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Assombrissement */
-    backdrop-filter: blur(2px); /* Léger flou artistique */
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
 }
 
 .hero-content {
@@ -48,7 +46,6 @@ body {
     color: #fff;
 }
 
-/* Badge du haut */
 .badge {
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -63,7 +60,6 @@ body {
 .main-title {
     font-size: 2.2rem;
     font-weight: 700;
-    letter-spacing: 0.5px;
     margin-bottom: 5px;
 }
 
@@ -74,7 +70,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* Boutons d'action principaux (Style Or/Marron comme Chez Bassou) */
+/* Boutons d'action */
 .cta-buttons {
     display: flex;
     flex-direction: column;
@@ -97,12 +93,8 @@ body {
 }
 
 .btn-primary {
-    background-color: #b38e50; /* Couleur dorée/marron premium */
+    background-color: #b38e50;
     color: #fff;
-}
-
-.btn-primary:hover {
-    background-color: #9c7a40;
 }
 
 .btn-secondary {
@@ -112,16 +104,12 @@ body {
     backdrop-filter: blur(5px);
 }
 
-.btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-}
-
-/* Conteneur des Cartes (Ajusté pour s'empiler proprement) */
+/* Conteneur des Infos et Vidéos */
 .info-container {
     width: 100%;
     max-width: 480px;
     padding: 20px;
-    margin-top: -20px; /* Fait remonter les cartes sur l'image */
+    margin-top: -20px;
     position: relative;
     z-index: 3;
     display: flex;
@@ -129,7 +117,6 @@ body {
     gap: 15px;
 }
 
-/* Style des cartes blanches */
 .info-card {
     background: #ffffff;
     border-radius: 24px;
@@ -137,11 +124,9 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
 
-/* Icônes dans les cartes */
 .card-icon {
     font-size: 1.4rem;
     width: 45px;
@@ -151,13 +136,13 @@ body {
     justify-content: center;
 }
 
-.icon-phone { color: #2e5a36; }      /* Vert foncé */
-.icon-location { color: #d9534f; }   /* Rouge épingle */
+.icon-phone { color: #2e5a36; }
+.icon-location { color: #d9534f; }
 .icon-social { color: #333; }
 
 .card-details h3 {
     font-size: 0.95rem;
-    color: #2e5a36; /* Titre vert comme sur l'image */
+    color: #2e5a36;
     font-weight: 600;
     margin-bottom: 2px;
 }
@@ -179,18 +164,14 @@ body {
     color: #b38e50;
     text-decoration: none;
     font-weight: 600;
-    display: inline-block;
-    margin-top: 4px;
 }
 
-/* Réseaux et Badge WhatsApp spécifique */
 .social-card {
     justify-content: space-between;
 }
 
 .handle {
     font-size: 0.85rem !important;
-    color: #888 !important;
 }
 
 .social-links {
@@ -208,7 +189,6 @@ body {
 
 .social-links a.disabled {
     color: #ccc;
-    pointer-events: none;
 }
 
 .whatsapp-badge {
@@ -219,10 +199,80 @@ body {
     font-size: 0.9rem;
     font-weight: 700;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(18, 140, 126, 0.3);
-    transition: transform 0.2s ease;
 }
 
-.whatsapp-badge:hover {
-    transform: scale(1.05);
+/* NOUVEAU : Style de la Section Vidéo */
+.video-section {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    margin-top: 5px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    color: #2e5a36;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.section-title i {
+    margin-right: 5px;
+}
+
+/* Grille 2x2 pour les vidéos (Format Vertical / Reels) */
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.video-wrapper {
+    background: #000;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 9 / 16; /* Format vertical parfait pour Reels / Shorts */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recadre proprement la vidéo pour remplir la carte */
+}
+
+.video-label {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    backdrop-filter: blur(2px);
+}
+
+/* Bouton Voir Plus Instagram */
+.btn-instagram-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
 }
